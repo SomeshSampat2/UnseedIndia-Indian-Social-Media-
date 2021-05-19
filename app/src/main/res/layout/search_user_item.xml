@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/profile_image"
+        android:background="@drawable/image_background"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:transitionName="@string/profile_trans"
+        android:src="@drawable/ic_person_blue_24dp"/>
+
+     <RelativeLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/profile_image"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="10dp">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/username"
+             android:transitionName="@string/user_trans"
+             android:text="Username"
+             android:textSize="17dp"
+             android:textColor="#111111"
+             android:textStyle="bold"/>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/quote"
+             android:text="We are here"
+             android:transitionName="@string/status_trans"
+             android:maxLines="1"
+             android:maxLength="30"
+             android:layout_below="@+id/username"/>
+
+
+
+
+
+     </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="Follow"
+        android:transitionName="@string/but_trans"
+        android:background="@drawable/btn_background_follow"
+        android:textColor="#ffffff"
+        android:textSize="13dp"
+        android:id="@+id/btn_follow"/>
+
+
+</RelativeLayout>

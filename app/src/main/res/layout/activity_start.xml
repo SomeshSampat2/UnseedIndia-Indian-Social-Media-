@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="40dp"
+            android:alpha="0"
+            android:src="@drawable/unseenindia" />
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:alpha="0"
+            android:background="@drawable/btn_background_register_start"
+            android:text="Register"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_btn"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:alpha="0"
+            android:background="@drawable/btn_background_login_start"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="9dp"
+            android:alpha="0"
+            android:gravity="center"
+            android:text="Explore the Unseen and Hidden Talents of India Where you will find the Emerging Stars and The Unbeilievable pieces of Art"
+            android:textColor="#111111"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/top_layout">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/profile_image"
+                android:padding="2dp"
+                android:transitionName="@string/profile_trans"
+                android:background="@drawable/image_background"
+                android:layout_margin="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/profile_image"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="39"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/no_of_posts"
+                        android:textStyle="bold"
+                        android:textColor="#111111"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Posts"
+                        android:textColor="#111111"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="836"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/no_of_followers"
+                        android:textStyle="bold"
+                        android:textColor="#111111"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Followers"
+                        android:textColor="#111111"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="152"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/no_of_followings"
+                        android:textStyle="bold"
+                        android:textColor="#111111"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Following"
+                        android:textColor="#111111"/>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hip Hop Alpha"
+                android:textStyle="bold"
+                android:transitionName="@string/user_trans"
+                android:textSize="17dp"
+                android:textColor="#111111"
+                android:id="@+id/username"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/quote"
+                android:transitionName="@string/status_trans"
+                android:text="Entreprenaur \nHip Hip Stickers for Whatsapp \nplay.google.com/store/apps/details..."
+                android:layout_marginTop="5dp"/>
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/follow_btn"
+            android:text="Follow"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_background_follow"
+            android:transitionName="@string/but_trans"
+            android:textSize="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_my_pictures"
+                android:background="@color/design_default_color_background"
+                android:layout_margin="10dp"
+                android:id="@+id/user_posts"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_favourite_pictures"
+                android:background="@color/design_default_color_background"
+                android:layout_margin="10dp"
+                android:id="@+id/favourite_posts"/>
+
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/recycler_view_user_posts"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_view_favourite_posts"
+            android:visibility="gone"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

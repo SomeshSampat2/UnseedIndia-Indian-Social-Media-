@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1093914079865",
+    "firebase_url": "https://unseenindia-94c9a.firebaseio.com",
+    "project_id": "unseenindia-94c9a",
+    "storage_bucket": "unseenindia-94c9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093914079865:android:aa6fb5528c516c2dc59aa8",
+        "android_client_info": {
+          "package_name": "com.example.unseenindia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1093914079865-vmh7vuqvo1osffjleinhp7g1586etrpl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALBmd105TD9w8fp3CW6CZxm3w9AqnnhzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1093914079865-vmh7vuqvo1osffjleinhp7g1586etrpl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

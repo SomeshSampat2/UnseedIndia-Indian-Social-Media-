@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">UnseenIndia</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_follow">FollowActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="user_trans">user_trans</string>
+    <string name="status_trans">status_trans</string>
+    <string name="profile_trans">profile_trans</string>
+    <string name="but_trans">but_trans</string>
+
+
+</resources>

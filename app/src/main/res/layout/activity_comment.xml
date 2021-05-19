@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommentActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view_comments"
+        android:layout_above="@+id/comment_layout"
+        android:padding="1dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/comment_layout"
+        android:layout_alignParentBottom="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/profile_image"
+            android:padding="2dp"
+            android:background="@drawable/image_background"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profile_image"
+            android:background="@drawable/comment_edit_text_background"
+            android:layout_centerVertical="true"
+            android:hint="Enter Your Comment Here"
+            android:layout_toLeftOf="@+id/post"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/comment"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="POST"
+           android:textColor="#2193b0"
+           android:textStyle="bold"
+           android:id="@+id/post"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="10dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
